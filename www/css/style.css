@@ -225,3 +225,18 @@ textarea.form-control {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* Sombra leve para o container do formulário */
+.containerform {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 0.375rem; /* Adiciona bordas arredondadas sutis */
+}
+
+/* Suporte para tema escuro */
+@media (prefers-color-scheme: dark) {
+    .containerform {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+}
