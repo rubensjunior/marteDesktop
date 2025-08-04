@@ -62,6 +62,70 @@ html, body {
     font-weight: 600;
 }
 
+/* Bootstrap Form Controls - Altura personalizada */
+.form-control,
+.form-select {
+    height: 52px !important;
+    min-height: 52px !important;
+}
+
+/* Bootstrap Buttons - Altura personalizada */
+.btn {
+    height: 52px !important;
+    min-height: 52px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Exceções para botões de controle da janela (minimizar e fechar) */
+#btn1,
+#btn2 {
+    height: auto !important;
+    min-height: auto !important;
+    width: auto !important;
+    padding: 0.25rem !important;
+    display: inline-flex !important;
+    margin: 0 !important;
+}
+
+/* Correção específica para o container dos botões do header */
+.main-header .text-end {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    gap: 0.5rem;
+}
+
+/* Garante que os botões do header fiquem lado a lado */
+.main-header #btn1,
+.main-header #btn2 {
+    flex-shrink: 0;
+}
+
+/* Textarea mantém comportamento flexível */
+textarea.form-control {
+    height: auto !important;
+    min-height: 52px !important;
+}
+
+/* Input groups mantém consistência */
+.input-group .form-control,
+.input-group .form-select {
+    height: 52px !important;
+}
+
+.input-group .btn {
+    height: 52px !important;
+}
+
+/* Exceção para botões dentro de input groups que são de controle */
+.input-group #btn1,
+.input-group #btn2 {
+    height: auto !important;
+    min-height: auto !important;
+}
+
 /* Correções responsivas para dispositivos móveis */
 @media (max-height: 600px) {
     .main-header {
@@ -78,6 +142,31 @@ html, body {
     
     .btn {
         padding: 0.25rem 0.5rem;
+        height: 46px !important; /* Altura reduzida para telas menores */
+    }
+    
+    /* Exceções para botões de controle da janela em telas pequenas */
+    #btn1,
+    #btn2 {
+        height: auto !important;
+        min-height: auto !important;
+        padding: 0.25rem !important;
+        display: inline-flex !important;
+    }
+    
+    .form-control,
+    .form-select {
+        height: 46px !important; /* Altura reduzida para telas menores */
+        min-height: 46px !important;
+    }
+    
+    .input-group .form-control,
+    .input-group .form-select {
+        height: 46px !important;
+    }
+    
+    .input-group .btn {
+        height: 46px !important;
     }
 }
 
@@ -93,6 +182,34 @@ html, body {
     .mini-title {
         font-size: 10px;
     }
+    
+    .btn {
+        height: 40px !important; /* Altura ainda mais reduzida */
+    }
+    
+    /* Exceções para botões de controle da janela em telas muito pequenas */
+    #btn1,
+    #btn2 {
+        height: auto !important;
+        min-height: auto !important;
+        padding: 0.2rem !important;
+        display: inline-flex !important;
+    }
+    
+    .form-control,
+    .form-select {
+        height: 40px !important; /* Altura ainda mais reduzida */
+        min-height: 40px !important;
+    }
+    
+    .input-group .form-control,
+    .input-group .form-select {
+        height: 40px !important;
+    }
+    
+    .input-group .btn {
+        height: 40px !important;
+    }
 }
 
 /* Correções para muito alta */
@@ -101,6 +218,7 @@ html, body {
         padding: 1rem 0;
     }
 }
+
 .bg-desktop{
     background-image: url(../assets/images/bg-desktop.jpeg);
     background-position: center;
