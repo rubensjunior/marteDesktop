@@ -22,8 +22,10 @@
     "icon": "assets/appIcon.ico"
   },
   "mac": {
-    "category": "public.app.category.productivity",
+    "identity": "Developer ID Application: Seu Nome (TEAMID)",
+    "category": "public.app-category.productivity",
     "target": "dmg",
-    "bundleIdentifier": "com.spacefeed.marte"
+    "bundleVersion": "1.0.0",
+    "bundleShortVersion": "1.0.0"
   }
 }
