@@ -1,5 +1,6 @@
 {
-  "name": "Spacefeed - Marte",
+  "name": "spacefeedMarte",
+  "productName": "Spacefeed - Marte",
   "version": "1.0.0",
   "description": "An Amazing Capacitor App",
   "author": {
