@@ -9,9 +9,6 @@
     "capacitor.config.*",
     "app/**/*"
   ],
-  "publish": {
-    "provider": "github"
-  },
   "nsis": {
     "allowElevation": true,
     "oneClick": false,
@@ -19,7 +16,15 @@
   },
   "win": {
     "target": "nsis",
-    "icon": "assets/appIcon.ico"
+    "icon": "assets/appIcon.ico",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "rubensjunior",
+        "repo": "marteDesktop",
+        "releaseType": "release"
+      }
+    ]
   },
   "mac": {
     "identity": "Developer ID Application: Seu Nome (TEAMID)",

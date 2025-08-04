@@ -8,7 +8,7 @@
     "email": ""
   },
   "repository": {
-    "type": "github",
+    "type": "git",
     "url": "https://github.com/rubensjunior/marteDesktop.git"
   },
   "license": "MIT",
@@ -18,7 +18,7 @@
     "electron:start-live": "node ./live-runner.js",
     "electron:start": "npm run build && electron --inspect=5858 ./",
     "electron:pack": "npm run build && electron-builder build --dir -c ./electron-builder.config.json",
-    "electron:make": "npm run build && electron-builder build -c ./electron-builder.config.json -p always"
+    "electron:make": "npm run build && electron-builder build -c ./electron-builder.config.json --publish always"
   },
   "dependencies": {
     "@capacitor-community/electron": "^5.0.1",
