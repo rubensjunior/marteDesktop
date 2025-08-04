@@ -109,6 +109,7 @@ export class ElectronCapacitorApp {
     const preloadPath = join(app.getAppPath(), 'build', 'src', 'preload.js');
     this.MainWindow = new BrowserWindow({
       icon,
+      frame: false,
       show: false,
       x: this.mainWindowState.x,
       y: this.mainWindowState.y,
