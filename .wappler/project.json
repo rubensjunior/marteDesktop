@@ -30,7 +30,7 @@
     "capacitor": {
       "checked": true
     },
-    "platform": "web",
+    "platform": "electron",
     "target": "",
     "device": null,
     "deviceId": null

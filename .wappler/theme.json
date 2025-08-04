@@ -1,0 +1,14 @@
+{
+  "bootstrap5": {
+    "basic": {
+      "primary": "#bc3908",
+      "secondary": "#6a6a6a",
+      "danger": "#c1121f",
+      "info": "#3a86ff",
+      "warning": "#e9c46a",
+      "light": "#f6f6f6",
+      "dark": "#1e1e1e"
+    },
+    "advanced": {}
+  }
+}

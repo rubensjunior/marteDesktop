@@ -8,9 +8,102 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow: hidden; /* Remove qualquer rolagem */
+}
+
+/* Garante que o layout principal ocupe 100% da altura */
+#index {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#view1 {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Seção principal sem rolagem */
+.vh-100 {
+    height: 100vh !important;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+/* Header com altura fixa */
+.main-header {
+    -ms-flex-negative: 0;
+        flex-shrink: 0; /* Não permite que o header diminua */
+    min-height: auto;
+}
+
+/* Container principal que ocupa o resto do espaço */
+.main-content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; /* Ocupa todo o espaço restante */
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .mini-title{
     font-size: 13px;
     font-weight: 600;
+}
+
+/* Correções responsivas para dispositivos móveis */
+@media (max-height: 600px) {
+    .main-header {
+        padding: 0.25rem 0 !important;
+    }
+    
+    .mini-title {
+        font-size: 11px;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem !important;
+    }
+    
+    .btn {
+        padding: 0.25rem 0.5rem;
+    }
+}
+
+@media (max-height: 500px) {
+    .main-header {
+        padding: 0.1rem 0 !important;
+    }
+    
+    .form-group {
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .mini-title {
+        font-size: 10px;
+    }
+}
+
+/* Correções para muito alta */
+@media (min-height: 800px) {
+    .main-header {
+        padding: 1rem 0;
+    }
+}
+.bg-desktop{
+    background-image: url(../assets/images/bg-desktop.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
