@@ -8,8 +8,8 @@
     "email": ""
   },
   "repository": {
-    "type": "git",
-    "url": ""
+    "type": "github",
+    "url": "https://github.com/rubensjunior/marteDesktop.git"
   },
   "license": "MIT",
   "main": "build/src/index.js",

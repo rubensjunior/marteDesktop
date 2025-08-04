@@ -1,5 +1,5 @@
 {
-  "appId": "com.yourdoamnin.yourapp",
+  "appId": "com.spacefeed.marte",
   "directories": {
     "buildResources": "resources"
   },
@@ -22,7 +22,8 @@
     "icon": "assets/appIcon.ico"
   },
   "mac": {
-    "category": "your.app.category.type",
-    "target": "dmg"
+    "category": "public.app.category.productivity",
+    "target": "dmg",
+    "bundleIdentifier": "com.spacefeed.marte"
   }
 }
